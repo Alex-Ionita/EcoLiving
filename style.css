@@ -4,6 +4,11 @@
     Room 1: https://source.unsplash.com/FqqiAvJejto
     Room 2: https://source.unsplash.com/GqbU78bdJFM
     Room 3: https://source.unsplash.com/nqZv8jtwLTY
+    Room 4: https://source.unsplash.com/X5UrOwSCYYI
+    Room 5: https://source.unsplash.com/ivfdGY8C_rw
+    Room 6: https://source.unsplash.com/67-sOi7mVIk
+    Room 7: https://source.unsplash.com/Y7WfCuz5tn0
+    Room 8: https://source.unsplash.com/ayzkAUNfsDI
 */
 
 /******************** CSS Reset ********************/
@@ -161,6 +166,11 @@ a:hover { color: #8ea17d; }
     font-size: 1.5rem;
 }
 
+.height-l   { min-height: 100vh;}
+.height-m   { min-height: 80vh;}
+.height-s   { min-height: 50vh;}
+.height-xs  { min-height: 30vh;}
+
 /******************** Banner Still IMG Styles ********************/
 
 .banner {
@@ -168,7 +178,7 @@ a:hover { color: #8ea17d; }
     background-color: rgb(120, 120, 125);
     background-size: cover;
     background-position: center;
-    min-height:80vh;
+    /* min-height:80vh; */
     color: #ecede8;
     background-attachment: fixed;
 }
@@ -191,6 +201,9 @@ a:hover { color: #8ea17d; }
 
 .bg-bed-1 { background-image: url("https://source.unsplash.com/GqbU78bdJFM");}
 .bg-bed-2 { background-image: url("https://source.unsplash.com/nqZv8jtwLTY");}
+
+.square { padding-bottom: 100%;}
+.gallery .bg-image { border: 2px solid white;}
 
 /******************** Rooms Gallery Section ********************/
 
@@ -256,4 +269,54 @@ a:hover { color: #8ea17d; }
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 2rem;
+}
+
+/******************** Partners Section ********************/
+
+.partners img {
+    max-width: 80%;
+}
+
+/******************** Contact Form Section ********************/
+
+input, textarea {
+    border-style: solid;
+    border: 2px solid #ECEDE8;
+    padding: 0.8em;
+    display: block;
+    width: 100%;
+    font-size: 0.8rem;
+}
+  
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #8EA17D;
+}
+  
+textarea {
+    min-height: 7em;
+}
+  
+input[type="submit"] {
+    width: auto;
+    display: block;
+}
+  
+form [class*=col-] {
+    padding: 5px;
+}
+  
+.email-signup input {
+    width: 30%;
+    display: inline-block;
+    max-width: 250px;
+    margin-top:1rem;
+}
+
+form .button {
+    margin: 1rem;
+    margin-left: 0;
+    width: 25%;
+    min-width: 5rem;
 }
