@@ -151,6 +151,17 @@ a:hover { color: #8ea17d; }
     border: 2px solid #17301C;
 }
 
+.button-solid {
+    background-color: #8ea17d;
+    border: 2px solid #8ea17d;
+}
+
+.button-solid:hover {
+    background-color: #17301C;
+    color: #ecede8;
+    border: 2px solid #17301C;
+}
+
 .logo {
     font-weight: 100;
     font-size: 2.5rem;
@@ -251,7 +262,7 @@ a:hover { color: #8ea17d; }
 
 .card {
     padding: 2rem;
-    background-color: white;
+    background-color: #ECEDE8;
     border-radius: 5px;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
@@ -319,4 +330,56 @@ form .button {
     margin-left: 0;
     width: 25%;
     min-width: 5rem;
+}
+
+/******************** Booking Section ********************/
+
+.no-bullets { list-style: none;}
+
+.card.featured { border: 2px solid #17301C;}
+
+.price {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.pricing-name {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(120, 120, 125);
+}
+
+.card .button { margin-top: 2rem;}
+
+/******************** Our Service Section ********************/
+
+.clickable-box {
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 rgba(0, 0, 0, 0);
+    transition: 0.2s all;
+    display: block;
+}
+  
+.clickable-box .overlay {
+    height: 12rem;
+    padding: 3rem 1rem;
+    background-color: rgba(0, 0, 10, 0.6);
+}
+  
+.clickable-box p {
+    margin-bottom: 0;
+}
+  
+.clickable-box:hover {
+    background-color: rgba(0,0,10,0.6);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 20px -5px rgba(0, 0, 0, 0.4);
+    margin-top:-2px;
+}
+
+.bg-image-service {
+    background-color: rgb(120, 120, 125);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
 }
