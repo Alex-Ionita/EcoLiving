@@ -189,7 +189,6 @@ a:hover { color: #8ea17d; }
     background-color: rgb(120, 120, 125);
     background-size: cover;
     background-position: center;
-    /* min-height:80vh; */
     color: #ecede8;
     background-attachment: fixed;
 }
