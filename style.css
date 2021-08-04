@@ -288,7 +288,7 @@ a:hover { color: #8ea17d; }
     max-width: 80%;
 }
 
-/******************** Contact Form Section ********************/
+/******************** Contact / Subscribe Form Section ********************/
 
 input, textarea {
     border-style: solid;
@@ -330,6 +330,13 @@ form .button {
     margin-left: 0;
     width: 25%;
     min-width: 5rem;
+}
+
+@media(max-width:768px) {
+    .email-signup input {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 /******************** Booking Section ********************/
@@ -382,4 +389,59 @@ form .button {
     background-size: cover;
     background-position: center;
     padding: 0;
+}
+
+/******************** General CSS Responsive Styles ********************/
+
+.show-xs, 
+.show-sm,
+.show-md {
+    display: none;
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+
+@media (max-width: 64em) {
+    .show-md { display: block; }
+    .hide-md { display: none;  }
+}
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+
+@media (max-width: 48em) {
+
+    html { font-size: 14px;}
+
+    .show-sm { display: block; }
+    .hide-sm { display: none;  }
+	 
+    .sm-text-center { text-align: center; }
+    .sm-text-left { text-align: left; }
+    .sm-text-right { text-align: right; }
+
+    .sm-padded { padding: 5%; }
+    .sm-padded-1 { padding: 1rem; }
+    .sm-padded-05 { padding: 0.5rem; }
+
+    .sm-padded-t-0 { padding-top: 0; }
+    .sm-padded-b-0 { padding-bottom: 0; }
+    .sm-padded-l-0 { padding-left: 0; }
+    .sm-padded-r-0 { padding-right: 0; }
+  
+    .sm-margin-t-0 { margin-top: 0; }
+    .sm-margin-b-0 { margin-bottom: 0; }
+    .sm-margin-l-0 { margin-left: 0; }
+    .sm-margin-r-0 { margin-right: 0; }
+
+}
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+
+@media (max-width: 36em) {
+    .show-xs { display: block; }
+    .hide-xs { display: none;  }
+
+    h2 { font-size: 7vw;}
+    h3 { font-size: 5vw;}
+    h4 { font-size: 4vw;}
 }
